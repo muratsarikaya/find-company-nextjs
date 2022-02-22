@@ -1,3 +1,7 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
 html,
 body {
   padding: 0;
@@ -13,4 +17,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.user--menu-list{
+  color: #271e00 !important;
 }

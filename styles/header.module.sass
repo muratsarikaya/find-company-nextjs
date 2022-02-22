@@ -1,0 +1,49 @@
+$whiteColor: #ffffff
+$blackColor: #271e00
+$yellowColor: #fdc600
+
+.user--menu-list
+  color: $blackColor
+
+.user--menu-list:hover
+  color: $whiteColor
+
+.header__filter_input
+  .ant-select-selector
+    height: 40px !important
+
+    input
+      height: 40px !important
+
+  .ant-select-selection-placeholder, .ant-select-selection-item
+    line-height: 38px !important
+  &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector
+    border-color: #fdc600 !important
+  &.ant-select:not(.ant-select-disabled):hover .ant-select-selector
+    border-color: #fdc600 !important
+
+.color__text_yellow
+  color: $yellowColor
+
+.slider__text_section
+  position: absolute
+  left: 0
+  top: 240px
+  width: 100%
+  text-align: center
+  z-index: 7
+
+.white__text_color
+  color: $whiteColor
+.slider__title a
+  font-size: 80px
+
+.slider__context
+  font-size: 35px
+.main__menu
+  li > *
+    vertical-align: middle
+  a, i
+    font-size: 20px
+  i
+    margin-right: 7px
