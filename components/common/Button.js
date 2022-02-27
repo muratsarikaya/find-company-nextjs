@@ -1,4 +1,4 @@
-import styled from "styled-components/dist/styled-components.min";
+import styled from "styled-components";
 
 const ButtonComp = styled.button`
   background: ${props => props.primary ? props.primary : "transparent"};
@@ -10,7 +10,7 @@ const ButtonComp = styled.button`
   border-radius: 3px;
   &:hover{
   background: ${props => props.textColor ? props.textColor : "white"};
-  color: ${props => props.primary ? props.primary : "transparent"};
+  color: ${props => props.primary ? props.primary : "#ccc"};
   }
 `;
 

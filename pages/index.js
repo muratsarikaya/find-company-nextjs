@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from "../components/layout/Layout";
 import 'react-dropdown/style.css';
 import TabMenuComp from "../components/advert/TabMenuComp";
+import FeaturedWrapper from "../components/featured/FeaturedWrapper";
+import RealEstateSection from "../components/realEstate/RealEstateSection";
 
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
         <>
             <Layout>
                 <TabMenuComp/>
+                <FeaturedWrapper/>
+                <RealEstateSection/>
             </Layout>
         </>
     )

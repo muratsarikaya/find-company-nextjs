@@ -58,8 +58,11 @@
     position: relative;
     transform:scale(1);
     overflow: hidden;
-    max-height: 237px;
+    max-height: 253px;
 
+}
+.advert__cart_top img{
+    max-height: 253px;
 }
 .advert__cart_top:hover:after{
     content:'';

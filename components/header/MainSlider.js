@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components/dist/styled-components";
+import styled from "styled-components";
 import img from "../../public/images/header/header_11.jpg"
 
 const HeaderParallax = styled.div`

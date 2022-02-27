@@ -27,7 +27,7 @@ const Header = () => {
                         <div className="col-3">
                             <div className="d-flex align-items-center justify-content-lg-end">
                                 <Link href="/hesabim"><a><Icon classStyle="fa fa-user-o" size="19"/></a></Link>
-                                <Button setValue="İlan Ekle"/>
+                                <Button  textColor="#fff" setValue="İlan Ekle"/>
                             </div>
                         </div>
                     </div>

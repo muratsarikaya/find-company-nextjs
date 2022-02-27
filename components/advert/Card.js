@@ -53,8 +53,8 @@ const Card = (props) => {
     return (
         <>
             {
-                dataItems.map(item => (
-                    <div className="col-4">
+                dataItems.map((item, index) => (
+                    <div className="col-4" key={index}>
                         <div className={styles.advert__cart}>
                             <div className={styles.advert__cart_top}>
                                 <LazyLoad>

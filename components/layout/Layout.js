@@ -8,18 +8,17 @@ const Layout = ({children}) => {
     return (
         <>
             <Head>
-                <style data-href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
-                    </style>
+                <style
+                    data-href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+                </style>
             </Head>
             <Header/>
             <main style={{backgroundColor: "#fff", position: "relative", zIndex: 1}}>
-               <div className="container">
-                   {children}
-               </div>
+                {children}
             </main>
             <Footer/>
         </>
-);
+    );
 };
 
 export default Layout;

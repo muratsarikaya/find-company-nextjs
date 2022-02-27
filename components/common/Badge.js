@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from "styled-components/dist/styled-components.min";
+import styled from "styled-components";
 
 const BadgeComp = styled.span`
-    color: #fff;
+    color: ${props => props.color ? props.color : "#fff"};
     display: inline-block;
     padding: 3px 6px;
     text-align: center;
@@ -17,7 +17,7 @@ const BadgeComp = styled.span`
 const Badge = (props) => {
     return (
         <>
-            <BadgeComp bgColor={props.bgColor}>{props.setValue}</BadgeComp>
+            <BadgeComp bgColor={props.bgColor} color={props.color}>{props.setValue}</BadgeComp>
         </>
     );
 };

@@ -1,4 +1,4 @@
-import styled from "styled-components/dist/styled-components.min";
+import styled from "styled-components";
 
 const IconComp = styled.i`
   color: ${props => props.color ? props.color : 'white'};
