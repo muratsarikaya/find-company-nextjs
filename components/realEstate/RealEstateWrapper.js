@@ -13,7 +13,5 @@ const RealEstateWrapper = (props) => {
     );
 };
 
-RealEstateWrapper.propTypes = {};
-RealEstateWrapper.defaultProps = {};
 
 export default RealEstateWrapper;

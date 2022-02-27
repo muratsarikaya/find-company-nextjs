@@ -8,7 +8,7 @@ const RealEstateSection = (props) => {
         <section className={styles.real_estate_section}>
             <div className="container">
                 <TitleSection statusClass="text-center" title1="Şehrinizdeki Emlakları Bulun" title2="Dünyadaki popüler mülklere göz atın"/>
-                <div>
+                <div className="mt-5">
                     <div className="row">
                         <RealEstateWrapper/>
                     </div>
