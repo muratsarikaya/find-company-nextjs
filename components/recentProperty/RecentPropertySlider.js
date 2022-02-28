@@ -78,7 +78,7 @@ const RecentPropertySlider = (props) => {
         >
             {
                 dataItems.map((item, index) =>(
-                    <SwiperSlide><Card classAttr="col-12" data={item}/></SwiperSlide>
+                    <SwiperSlide key={index}><Card classAttr="col-12" data={item}/></SwiperSlide>
                 ))
             }
         </Swiper>

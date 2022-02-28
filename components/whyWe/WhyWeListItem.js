@@ -33,7 +33,7 @@ const WhyWeListItem = (props) => {
         <>
             {
                 whyList.map((item, index) => (
-                    <div className="row">
+                    <div className="row" key={index}>
                         <div className="col-2">
                             <LazyLoad>
                                 <img className={` ${styles.why_we_list_img} w-100`} src={item.img.src} alt="title"/>
