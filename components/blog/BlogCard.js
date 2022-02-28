@@ -1,8 +1,7 @@
-import React from 'react';
+import Image from "next/image";
 import styles from "./blogCart.module.css";
 import Link from "next/link";
 import LazyLoad from "react-lazyload";
-import img from "../../public/images/advert/property_7.jpg";
 
 const BlogCard = (props) => {
     return (
@@ -10,8 +9,7 @@ const BlogCard = (props) => {
             <div className={styles.blog__card}>
                 <Link href="/"><a>
                     <LazyLoad>
-                        <img className="w-100"
-                             src={props.data.img}
+                        <Image src={props.data.image} className="w-100" layout="responsive" width="750" height="500"
                              alt=""/>
                     </LazyLoad>
                     <div className={styles.blog__card_context}>

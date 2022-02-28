@@ -1,8 +1,8 @@
+import Image from "next/image";
 import LazyLoad from "react-lazyload"
 import styles from './advert.module.css'
 import Icon from "../common/Icon";
 import {Rate} from 'antd';
-import img from "../../public/images/advert/property_7.jpg"
 import Badge from "../common/Badge"
 
 
@@ -13,7 +13,7 @@ const Card = (props) => {
                 <div className={styles.advert__cart}>
                     <div className={styles.advert__cart_top}>
                         <LazyLoad>
-                            <img className="w-100" src={props.data.image.src} alt=""/>
+                            <Image className="w-100" src={props.data.image} alt="" width="750" height="500" layout="responsive"/>
                         </LazyLoad>
                         <div className={`${styles.advert__ctg_badge} text-end`}>
                             <Badge bgColor="#6449e7" setValue="Featured"/>
@@ -59,7 +59,8 @@ const Card = (props) => {
                                     <Rate allowHalf defaultValue={2.5}/>
                                 </div>
                                 <div className="col-6 d-flex align-items-center justify-content-end">
-                                    <span className={styles.card__price}>{props.data.price}</span> / <span>{props.data.unit}</span>
+                                    <span
+                                        className={styles.card__price}>{props.data.price}</span> / <span>{props.data.unit}</span>
                                 </div>
                             </div>
                         </div>

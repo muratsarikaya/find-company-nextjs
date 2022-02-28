@@ -13,5 +13,9 @@ const withSassF = withSass({
 module.exports = {
     nextConfig,
     withSassF,
+    reactStrictMode: true,
+    images: {
+        domains: ['demo.lion-coders.com'],
+    },
 };
 
