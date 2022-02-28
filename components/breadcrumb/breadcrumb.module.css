@@ -1,0 +1,73 @@
+
+.breadcrumb__section {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 70px 0 30px 0;
+    background-color: #f1f1f1;
+}
+
+.bg_h {
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.op_5 {
+    opacity: 0.5;
+}
+
+.breadcrumb_menu h1 {
+    font-size: 32px;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    letter-spacing: 0.075em;
+}
+
+.breadcrumb_menu a {
+    color: var(--white)
+}
+
+.breadcrumb_menu span {
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+    font-size: 12px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.breadcrumb_menu span::before {
+    position: absolute;
+    content: "/";
+    right: -6px;
+    top: -4px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.breadcrumb_menu span:last-child:before {
+    display: none;
+}
+
+.position_relative {
+    position: relative;
+}

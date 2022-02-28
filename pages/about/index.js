@@ -1,8 +1,12 @@
-import React from 'react';
-
+import LayoutTwo from "../../components/layout/LayoutTwo";
+import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
+import VideoSectionOne from "../../components/video/VideoSectionOne";
 const AboutPage = (props) => {
     return (
-        <div>hakkımızda</div>
+        <LayoutTwo>
+            <Breadcrumb/>
+            <VideoSectionOne/>
+        </LayoutTwo>
     );
 };
 

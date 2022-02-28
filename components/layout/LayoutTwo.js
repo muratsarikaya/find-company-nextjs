@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Header from "../header/Header";
+import HeaderTwo from "../header/HeaderTwo";
 import Footer from "../footer/Footer";
 
 
-const Layout = ({children}) => {
+const LayoutTwo = ({children}) => {
     return (
         <>
             <Head>
@@ -11,7 +11,7 @@ const Layout = ({children}) => {
                     data-href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
                 </style>
             </Head>
-            <Header/>
+            <HeaderTwo/>
             <main style={{backgroundColor: "#fff", position: "relative", zIndex: 1}}>
                 {children}
             </main>
@@ -20,4 +20,4 @@ const Layout = ({children}) => {
     );
 };
 
-export default Layout;
+export default LayoutTwo;

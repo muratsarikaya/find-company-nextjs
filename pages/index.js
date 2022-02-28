@@ -10,7 +10,6 @@ import BlogSection from "../components/blog/BlogSection";
 
 
 export default function Home() {
-
     return (
         <>
             <Layout>

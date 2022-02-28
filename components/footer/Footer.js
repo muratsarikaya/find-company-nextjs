@@ -48,7 +48,7 @@ const Footer = () => {
                             <h2 className="footer__title">Linkler</h2>
                             <ul>
                                 <li><Link href="/about"><a>About us</a></Link></li>
-                                <li><Link href="/contact"><a>Contact us</a></Link></li>
+                                <li><Link href="/"><a>Contact us</a></Link></li>
                                 <li><Link href="/"><a>Privacy Policy</a></Link></li>
                                 <li><Link href="/"><a>FAQ</a></Link></li>
                             </ul>
@@ -64,13 +64,13 @@ const Footer = () => {
                             <div>Takip Et</div>
                             <ul className="list-style-none d-flex">
                                 <li>
-                                    <Link href=""><a><Icon classStyle="fa fa-facebook" color="#555"
+                                    <Link href="/"><a><Icon classStyle="fa fa-facebook" color="#555"
                                                            size="19"/></a></Link></li>
-                                <li className="ms-3"><Link href=""><a><Icon classStyle="fa fa-twitter" color="#555"
+                                <li className="ms-3"><Link href="/"><a><Icon classStyle="fa fa-twitter" color="#555"
                                                            size="19"/></a></Link></li>
-                                <li className="ms-3"><Link href=""><a><Icon classStyle="fa fa-instagram" color="#555"
+                                <li className="ms-3"><Link href="/"><a><Icon classStyle="fa fa-instagram" color="#555"
                                                            size="19"/></a></Link></li>
-                                <li className="ms-3"><Link href=""><a><Icon classStyle="fa fa-youtube" color="#555"
+                                <li className="ms-3"><Link href="/"><a><Icon classStyle="fa fa-youtube" color="#555"
                                                            size="19"/></a></Link></li>
                             </ul>
                         </div>

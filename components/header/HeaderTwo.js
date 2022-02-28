@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from "next/link";
 import LogoUrl from "../../public/images/logo-white.png"
 import Logo from "../common/Logo";
@@ -9,7 +8,9 @@ import Button from "../common/Button"
 import Icon from "../common/Icon";
 
 
-const Header = () => {
+
+const HeaderTwo = () => {
+
     return (
         <header>
             <div className="container-wrapper">
@@ -26,15 +27,14 @@ const Header = () => {
                         <div className="col-3">
                             <div className="d-flex align-items-center justify-content-lg-end">
                                 <Link href="/hesabim"><a><Icon classStyle="fa fa-user-o" size="19"/></a></Link>
-                                <Button  textColor="#fff" setValue="İlan Ekle"/>
+                                <Button textColor="#fff" setValue="İlan Ekle"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <MainSlider/>
         </header>
     );
 };
 
-export default Header;
+export default HeaderTwo;
