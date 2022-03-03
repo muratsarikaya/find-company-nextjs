@@ -1,8 +1,8 @@
-.why_we_section{
-    position:relative;
+.why_we_section {
+    position: relative;
 }
 
-.why_we_section:before{
+.why_we_section:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -13,23 +13,48 @@
     z-index: -1;
 }
 
-.why_we_section_img{
+.why_we_section_img {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
-.why_we_list_img{
+.why_we_list_img {
     opacity: 0.7;
     max-width: 55px;
 }
 
-.why_we_list_title h3{
+.why_we_list_title h3 {
     font-size: 20px;
-    font-weight:700;
+    font-weight: 700;
 }
-.why_we_list_context{
+
+.why_we_list_context {
     line-height: 1.8;
     font-size: 15px;
     color: #888;
+}
+
+.people_number {
+    font-size: 32px;
+}
+
+.counter_text {
+    text-align: center;
+}
+
+.counter_value {
+    color: #333;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.counter_text p {
+    color: #333;
+    font-size: 16px;
+}
+
+.people_number_section {
+    padding-top: 130px;
 }

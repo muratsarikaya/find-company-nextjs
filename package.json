@@ -16,6 +16,7 @@
     "react-dropdown": "^1.9.2"
   },
   "devDependencies": {
+    "@fancyapps/ui": "^4.0.26",
     "@zeit/next-sass": "^1.0.1",
     "antd": "^4.18.7",
     "babel-plugin-styled-components": "^2.0.5",
@@ -26,11 +27,16 @@
     "node-sass": "^7.0.1",
     "path": "^0.12.7",
     "rc-menu": "^9.3.2",
+    "react-fancybox": "^0.2.5",
+    "react-image-video-lightbox": "^3.0.0",
     "react-lazyload": "^3.2.0",
     "react-magnific-popup": "^1.0.1",
+    "react-modal-video": "^1.2.8",
     "react-tabs": "^3.2.3",
+    "react-videojs-fancybox": "0.0.7",
     "reactstrap": "^9.0.1",
     "sass": "^1.49.8",
+    "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.3",
     "swiper": "^8.0.6"
   }
