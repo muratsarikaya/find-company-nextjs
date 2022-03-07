@@ -1,0 +1,33 @@
+.staff__wrapper{
+    padding: 130px 0;
+}
+
+.staffName{
+    color: #333;
+    font-size:20px;
+    font-weight: 700;
+}
+.staffTask{
+    color: #888;
+}
+.staffPhone{
+    margin-top:10px;
+}
+.staffPhone a{
+    color: #888;
+    font-size: 14px;
+    display:flex;
+    justify-content: center;
+}
+.staffPhone i{
+    margin-right: 8px;
+}
+.staffInformation{
+    margin:0 30px;
+    padding: 12px 15px;
+    box-shadow: 0 10px 15px #dddddd63;
+    text-align:center;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 3px;
+}
