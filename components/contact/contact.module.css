@@ -1,0 +1,11 @@
+.contact__section{
+    padding: 130px 0;
+}
+.contact__item_wrapper a{
+    color: #888 !important;
+
+}
+.contact__item_wrapper span{
+    color: #888 !important;
+    font-weight: 700;
+}

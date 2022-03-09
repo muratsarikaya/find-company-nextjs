@@ -11,9 +11,9 @@ const Breadcrumb = (props) => {
                 <div className="row">
                     <div className="col-md-8 offset-md-2 text-center">
                         <div className={styles.breadcrumb_menu}>
-                            <h1>Hakkımızda</h1>
+                            <h1>{props.breadcrumbData.title}</h1>
                             <span><Link href="/"><a>Anasayfa</a></Link></span>
-                            <span>Hakkımızda</span>
+                            <span>{props.breadcrumbData.title}</span>
                         </div>
                     </div>
                 </div>

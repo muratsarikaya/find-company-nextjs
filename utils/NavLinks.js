@@ -15,7 +15,7 @@ export const navLinks = [
         path: "/blog",
     },
     {
-        name: "İletim",
-        path: "#contact",
+        name: "İletişim",
+        path: "/contact",
     },
 ];

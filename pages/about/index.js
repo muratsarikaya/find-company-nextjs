@@ -5,10 +5,14 @@ import SimpleReactLightbox from 'simple-react-lightbox';
 import WhyWePeopleNumberSection from "../../components/whyWe/WhyWePeopleNumberSection";
 import StaffSection from "../../components/staff/StaffSection";
 
+const breadcrumbData ={
+    "title":"Hakkımızda"
+}
+
 const AboutPage = (props) => {
     return (
         <LayoutTwo>
-            <Breadcrumb/>
+            <Breadcrumb breadcrumbData={breadcrumbData}/>
             <SimpleReactLightbox>
                 <VideoSectionOne/>
             </SimpleReactLightbox>
