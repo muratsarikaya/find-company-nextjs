@@ -1,4 +1,4 @@
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+import {Tab, Tabs, TabList, TabPanel,resetIdCounter } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styles from './advert.module.css'
 import Card from './Card'
@@ -57,6 +57,7 @@ const dataItems = [
 ];
 
 const TabMenuComp = (props) => {
+    resetIdCounter();
     return (
         <section className={styles.trending__places}>
             <div className="container">

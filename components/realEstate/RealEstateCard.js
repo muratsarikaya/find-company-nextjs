@@ -8,7 +8,7 @@ import styles from "./realEstate.module.css"
 const RealEstateCard = (props) => {
     return (
         <div className={props.column}>
-            <Link href="">
+            <Link href="/">
                 <a>
                     <div className={styles.real__estate_wrap}>
                         <div className={styles.real__estate_img}>

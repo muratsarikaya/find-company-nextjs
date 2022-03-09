@@ -1,12 +1,19 @@
 import Head from "next/head";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import Page from 'react-page-loading'
+import React, { useRef, useEffect } from 'react'
+import LoadingBar from 'react-top-loading-bar'
+
 
 const Layout = ({children}) => {
+    const ref = useRef(null)
+    useEffect(()=>{
+        ref.current.complete()
+    },[])
+
     return (
         <>
-            <Page loader={"rotate-spin"} color={"#6449e7"} size={5}>
+            <LoadingBar color='#6449e7' ref={ref} />
                 <Head>
                     <style
                         data-href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
@@ -17,7 +24,7 @@ const Layout = ({children}) => {
                     {children}
                 </main>
                 <Footer/>
-            </Page>
+
         </>
     );
 };

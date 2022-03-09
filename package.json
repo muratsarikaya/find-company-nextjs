@@ -13,8 +13,7 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-dropdown": "^1.9.2",
-    "react-page-loading": "^1.0.2"
+    "react-dropdown": "^1.9.2"
   },
   "devDependencies": {
     "@fancyapps/ui": "^4.0.26",
@@ -35,6 +34,7 @@
     "react-magnific-popup": "^1.0.1",
     "react-modal-video": "^1.2.8",
     "react-tabs": "^3.2.3",
+    "react-top-loading-bar": "^2.1.0",
     "react-videojs-fancybox": "0.0.7",
     "reactstrap": "^9.0.1",
     "sass": "^1.49.8",
