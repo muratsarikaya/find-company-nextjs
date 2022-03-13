@@ -9,10 +9,9 @@ import Icon from "../common/Icon";
 import {Dropdown, Menu} from "antd";
 import React from "react";
 
-
 const menu = (
     <Menu>
-        <Menu.Item>
+        <Menu.Item key="key1">
             <Link href="/login">
                 <a rel="noopener noreferrer" className="d-flex">
                     <Icon classStyle="fa fa-sign-in" color="#555" size="18"/>
@@ -20,7 +19,7 @@ const menu = (
                 </a>
             </Link>
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item key="key2">
             <Link href="/register">
                 <a rel="noopener noreferrer" className="d-flex">
                     <Icon classStyle="fa fa-user-plus" color="#555" size="18"/>
@@ -31,10 +30,10 @@ const menu = (
     </Menu>
 );
 
-const HeaderTwo = () => {
+const HeaderTree = () => {
 
     return (
-        <header>
+        <header className="header__V3">
             <div className="container-wrapper">
                 <div className="container">
                     <div className="row align-items-center">
@@ -62,4 +61,4 @@ const HeaderTwo = () => {
     );
 };
 
-export default HeaderTwo;
+export default HeaderTree;

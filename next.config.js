@@ -15,7 +15,7 @@ module.exports = {
     withSassF,
     reactStrictMode: true,
     images: {
-        domains: ['demo.lion-coders.com'],
+        domains: ['demo.lion-coders.com','cdn.stocksnap.io'],
     },
 };
 

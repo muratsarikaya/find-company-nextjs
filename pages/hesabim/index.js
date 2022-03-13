@@ -1,8 +1,10 @@
 import React from 'react';
-import Layout from "../../components/layout/Layout";
+import LayoutTree from "../../components/layout/LayoutTree";
 const Index = (props) => {
     return (
-        <Layout></Layout>
+        <LayoutTree>
+
+        </LayoutTree>
     );
 };
 
