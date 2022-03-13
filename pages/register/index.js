@@ -14,7 +14,7 @@ const Index = (props) => {
                         <div className="col-6 px-0">
                             <div className={styles.login__bg}>
                                 <Image className={`w-100 h-100`}
-                                       src="https://cdn.stocksnap.io/img-thumbs/960w/architecture-building_HI58YUV511.jpg"
+                                       src="https://cdn.stocksnap.io/img-thumbs/960w/canal-water_GCZ32Y9RLS.jpg"
                                        objectFit="cover" width="1000px" height="100%"/>
                             </div>
                         </div>
