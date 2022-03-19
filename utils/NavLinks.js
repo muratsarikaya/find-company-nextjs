@@ -7,8 +7,8 @@ export const navLinks = [
         path: "/about",
     },
     {
-        name: "Hizmetlerimiz",
-        path: "/services",
+        name: "İlanlar",
+        path: "/post-ad",
     },
     {
         name: "Blog",

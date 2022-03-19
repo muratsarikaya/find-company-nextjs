@@ -45,3 +45,8 @@
     color: #222222;
     font-weight: 700;
 }
+
+.blogPage__list_section {
+    padding: 100px 0;
+    background: #f7f7f7;
+}

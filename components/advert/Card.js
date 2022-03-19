@@ -10,8 +10,8 @@ const Card = (props) => {
     return (
         <>
             <div className={props.classAttr}>
-                <div className={styles.advert__cart}>
-                    <div className={styles.advert__cart_top}>
+                <div className={`${styles.advert__cart} ${props.cardStatus === "horizontal" && "row" }`}>
+                    <div className={`${styles.advert__cart_top} ${props.cardStatus === "horizontal" && "col-md-6 px-0" }`}>
                         <LazyLoad>
                             <Image className="w-100" src={props.data.image} alt="" width="750" height="500" layout="responsive"/>
                         </LazyLoad>
@@ -23,7 +23,7 @@ const Card = (props) => {
 
                         </div>
                     </div>
-                    <div className={styles.advert__cart_bottom}>
+                    <div className={`${styles.advert__cart_bottom} ${props.cardStatus === "horizontal" && "col-md-6" }`}>
                         <div>
                             <h4 className={styles.property__title_box}>{props.data.title}</h4>
                         </div>
