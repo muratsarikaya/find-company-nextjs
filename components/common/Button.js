@@ -9,7 +9,7 @@ const ButtonComp = styled.button`
   font-weight: 500;
   margin: ${props => props.margin ? props.margin : "1em"};;
   padding: 0.25em 1em;
-  border: 2px solid ${props => props.primary ? props.primary : "white"};
+  border: 2px solid ${props => props.primary ? props.primary : props.border};
   border-radius: 3px;
 
   &:hover {
@@ -22,7 +22,7 @@ const Button = (props) => {
     return (
         <div>
             <ButtonComp margin={props.margin} width={props.width} height={props.height} primary={props.primary}
-                        textColor={props.textColor}>{props.setValue}</ButtonComp>
+                        textColor={props.textColor} border={props.border}>{props.setValue}</ButtonComp>
         </div>
     )
 };

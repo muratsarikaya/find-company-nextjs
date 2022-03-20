@@ -1,12 +1,13 @@
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import {Input, Slider, InputNumber} from 'antd';
 import styles from "../post-ad/postAd.module.css";
 import {Form} from "reactstrap";
 import Select from "react-dropdown-select";
 import Card from "../advert/Card";
 import img from "../../public/images/advert/property_7.jpg";
 import Button from "../common/Button";
-import {Input, Slider, Switch, InputNumber} from 'antd';
+
 
 
 const dataItems = [
@@ -91,6 +92,10 @@ const PostAdListPage = (props) => {
         setMax(values[1]);
     };
 
+    useEffect(() => {
+
+    }, [min, max]);
+
     return (
         <>
             <section className={styles.postAdPage__list_section}>
@@ -130,11 +135,11 @@ const PostAdListPage = (props) => {
                                     <div className="d-flex justify-content-between">
                                         <div>
                                             <div className={styles.input__title}>Min</div>
-                                            <InputNumber min="1" max="10000" className="mb-4" value={min} style={{height: "45px", width: "80%"}}/>
+                                            <InputNumber min={1} max={10000} className="mb-4" value={min} defaultValue={1} style={{height: "45px", width: "80%"}}/>
                                         </div>
                                         <div className="text-end">
                                             <div className={styles.input__title}>Max</div>
-                                            <InputNumber min="1" max="10000" className="mb-4" value={max} style={{height: "45px", width: "80%"}}/>
+                                            <InputNumber min={1} max={10000} className="mb-4" value={max} defaultValue={10000} style={{height: "45px", width: "80%"}}/>
                                         </div>
 
                                     </div>
