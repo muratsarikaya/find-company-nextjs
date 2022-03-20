@@ -15,6 +15,8 @@ const Layout = ({children}) => {
         <>
             <LoadingBar color='#6449e7' ref={ref} />
                 <Head>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+                          rel="stylesheet"/>
                 </Head>
                 <Header/>
                 <main style={{backgroundColor: "#fff", position: "relative", zIndex: 1}}>
