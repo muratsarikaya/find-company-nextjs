@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
 };
@@ -16,6 +15,6 @@ module.exports = {
     reactStrictMode: true,
     images: {
         domains: ['demo.lion-coders.com','cdn.stocksnap.io'],
-    },
+    }
 };
 
