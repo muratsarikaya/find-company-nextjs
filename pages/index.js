@@ -15,10 +15,10 @@ const Layout = dynamic(
     {ssr:true}
 )
 
-const RecentPropertySection = dynamic(
-    ()=> import("../components/recentProperty/RecentPropertySection"),
-    {ssr:true}
-    )
+// const RecentPropertySection = dynamic(
+//     ()=> import("../components/recentProperty/RecentPropertySection"),
+//     {ssr:true}
+//     )
 const BlogSection = dynamic(()=> import("../components/blog/BlogSection"),
     {ssr:true}
 );
@@ -40,7 +40,7 @@ export default function Home() {
                     <FeaturedWrapper/>
                     <RealEstateSection/>
                     <WeSection/>
-                    <RecentPropertySection/>
+                    {/*<RecentPropertySection/>*/}
                     <BlogSection/>
                 </Layout>
         </Provider>
