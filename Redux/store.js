@@ -1,9 +1,9 @@
 import {createStore, combineReducers, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
-import {hotelListReducer} from "./Reducers/HotelReducer";
+//import {hotelListReducer} from "./Reducers/HotelReducer";
 
 const reducer = combineReducers({
-    hotelList: hotelListReducer
+    //hotelList: hotelListReducer
 });
 
 const initialState = {};
