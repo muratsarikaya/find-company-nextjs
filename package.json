@@ -10,10 +10,18 @@
   },
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.17",
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-dropdown": "^1.9.2"
+    "react-dropdown": "^1.9.2",
+    "react-loading-icons": "^1.1.0",
+    "react-notifications": "^1.7.3",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@fancyapps/ui": "^4.0.26",
