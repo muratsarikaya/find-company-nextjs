@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, {Html, Head, Main, NextScript} from 'next/document'
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -22,10 +22,22 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head />
+                <Head>
+                    <script async
+                        data-partytown-config
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                      partytown = {
+                                        lib: "/_next/static/~partytown/",
+                                        debug: true
+                                      };
+                                    `,
+                        }}
+                    />
+                </Head>
                 <body>
-                <Main />
-                <NextScript />
+                <Main/>
+                <NextScript/>
                 </body>
             </Html>
         )
