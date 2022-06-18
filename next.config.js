@@ -2,7 +2,6 @@ const nextConfig = {
     reactStrictMode: true,
 };
 const withSass = require('@zeit/next-sass');
-const {webpack} = require("next/dist/compiled/webpack/webpack");
 const withSassF = withSass({
     cssModules: true,
     sassLoaderOptions: {
@@ -22,21 +21,6 @@ module.exports = {
     },
     optimization: {
         mergeDuplicateChunks: true,
-    },
-    webpack(config, { isServer }) {
-        if (!isServer) {
-            config.optimization.splitChunks.cacheGroups = {
-                ...config.optimization.splitChunks.cacheGroups,
-                '@sentry': {
-                    test: /[\\/]node_modules[\\/](@sentry)[\\/]/,
-                    name: '@sentry',
-                    priority: 10,
-                    reuseExistingChunk: false,
-                },
-            };
-        }
-
-        return config;
-    },
+    }
 };
 
