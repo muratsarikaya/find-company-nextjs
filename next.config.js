@@ -20,6 +20,9 @@ module.exports = {
     experimental: {
         nextScriptWorkers: true,
     },
+    optimization: {
+        mergeDuplicateChunks: true,
+    },
     webpack(config, { isServer }) {
         if (!isServer) {
             config.optimization.splitChunks.cacheGroups = {
