@@ -12,7 +12,7 @@ import store from "../Redux/store";
 
 const Layout = dynamic(
     ()=> import("../components/layout/Layout"),
-    {ssr:true}
+    {ssr:false}
 )
 
 // const RecentPropertySection = dynamic(
@@ -20,17 +20,17 @@ const Layout = dynamic(
 //     {ssr:true}
 //     )
 const BlogSection = dynamic(()=> import("../components/blog/BlogSection"),
-    {ssr:true}
+    {ssr:false}
 );
 const RealEstateSection = dynamic(()=> import("../components/realEstate/RealEstateSection"),
-    {ssr:true}
+    {ssr:false}
     ) ;
 const FeaturedWrapper = dynamic(()=> import("../components/featured/FeaturedWrapper"),
-    {ssr:true});
+    {ssr:false});
 const WeSection = dynamic(()=> import("../components/whyWe/WeSection"),
-    {ssr:true});
+    {ssr:false});
 const TabMenuComp = dynamic(()=> import("../components/advert/TabMenuComp"),
-    {ssr:true});
+    {ssr:false});
 
 export default function Home() {
     return (
